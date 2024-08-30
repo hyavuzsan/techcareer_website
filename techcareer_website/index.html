@@ -204,6 +204,23 @@
     transform: rotate(-45deg);
 }
         
+        @media (max-width: 768px) {
+    .carousel-container,
+    .company-logos-container {
+        max-width: 100%;
+    }
+    .carousel-item img,
+    .company-logos img {
+        width: 90%;
+    }
+    .dark-blue-strip {
+        height: 60px;
+        top: 50%;
+        transform: translateY(0);
+    }
+}
+
+        
 /* Etkinlik Kartları için Stil */
 .card {
             border: none;
