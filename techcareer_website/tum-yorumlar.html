@@ -101,6 +101,45 @@
     padding: 0 5px;
     color: #f0f4fa;
 }
+        .comments-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kartları 300px minimum genişlikte tutarak hizalar */
+            gap: 20px; /* Kartlar arası sabit boşluk */
+        }
+
+        .comment-card {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-card img {
+            width: 80px; /* Kare yapmak için genişlik ve yükseklik aynı */
+            height: 80px; /* Kare yapmak için genişlik ve yükseklik aynı */
+            border-radius: 8px; /* Kare için kenarları düz bırak */
+            margin-bottom: 10px;
+        }
+
+        .comment-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .comment-card .author {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .comment-card .bootcamp {
+            font-size: 12px;
+            color: #32CD32;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
        </style>
 </head>
 
