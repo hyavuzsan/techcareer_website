@@ -320,6 +320,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+    <!-- Şirket Logoları Kaydırma Scripti -->
+    <script>
+        let currentIndex = 0;
+        const companyLogos = document.querySelector('.company-logos');
+        const logos = document.querySelectorAll('.company-logos img');
+        const totalLogos = logos.length;
+        const logosPerView = 6;
+
+        function showSlide(index) {
+            if (index < 0) {
+                currentIndex = totalLogos - logosPerView;
+            } else if (index >= totalLogos) {
+                currentIndex = 0;
+            } else {
+                currentIndex = index;
+            }
+            const offset = -(currentIndex * 120); // Logo genişliği
+            companyLogos.style.transform = `translateX(${offset}px)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        setInterval(nextSlide, 2000); // Otomatik kaydırma 2 saniye
+    </script>
         </body>
 
 </html>
