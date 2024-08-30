@@ -137,6 +137,73 @@
             background-color: #32CD32; 
             opacity: 1; 
         }
+        
+ /* Şirket Logoları Slider Ayarları */
+.company-logos-container {
+    position: relative;
+    max-width: 60%; 
+    margin: 0 auto; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: transparent; 
+    padding: 20px;
+}
+
+.company-logos {
+    display: flex;
+    transition: transform 2s ease;
+}
+
+.company-logos img {
+    width: 120px;
+    height: auto;
+    margin: 0; 
+}
+        /* Oklar için stil */
+/*Burayı düzelticem*/
+.carousel-control-prev-logos,
+.carousel-control-next-logos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #32CD32; 
+    border-radius: 50%; 
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-logos {
+    left: 10px; 
+}
+
+.carousel-control-next-logos {
+    right: 10px; 
+}
+
+.carousel-control-prev-logos::before,
+.carousel-control-next-logos::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+}
+
+.carousel-control-prev-logos::before {
+    transform: rotate(135deg); 
+}
+.carousel-control-next-logos::before {
+    transform: rotate(-45deg);
+}
+        
 
 
         </style>
