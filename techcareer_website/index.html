@@ -203,6 +203,53 @@
 .carousel-control-next-logos::before {
     transform: rotate(-45deg);
 }
+        
+/* Etkinlik Kartları için Stil */
+.card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%; 
+}
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+        }
+
+        .btn-success {
+            background-color: #32CD32;
+            border-color: #32CD32;
+        }
+
+        .btn-success:hover {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-md-4 {
+            display: flex;
+        }
+
 
         
 
